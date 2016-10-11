@@ -33,8 +33,10 @@ class weather {
           BufferedReader reader = new BufferedReader( new InputStreamReader( is )  );
 
           String line = null;
-          while( ( line += reader.readLine() ) != null )  {
-               System.out.println(line);
+          String line_ = null;
+          while( ( line_ = reader.readLine() ) != null )  {
+               System.out.println(line_);
+               line += line_;
           }
           reader.close();
 
